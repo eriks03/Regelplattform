@@ -1,0 +1,837 @@
+Release 13.1 - xst O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "digilent_sevseg_disp_wrapper_xst.prj"
+Verilog Include Directory          : {"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/pcores/" "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/" "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-3
+Output File Name                   : "../implementation/digilent_sevseg_disp_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : digilent_sevseg_disp_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/digilent_sevseg_disp_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/verilog/Ssg_decoder_core.v\" into library ssg_decoder_v1_00_a
+Parsing module <Ssg_decoder_core>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_address_decoder>.
+Parsing architecture <IMP> of entity <plb_address_decoder>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_slave_attachment>.
+Parsing architecture <implementation> of entity <plb_slave_attachment>.
+Parsing VHDL file "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plbv46_slave_single>.
+Parsing architecture <implementation> of entity <plbv46_slave_single>.
+Parsing VHDL file "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/user_logic.vhd" into library ssg_decoder_v1_00_a
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/ssg_decoder.vhd" into library ssg_decoder_v1_00_a
+Parsing entity <ssg_decoder>.
+Parsing architecture <IMP> of entity <ssg_decoder>.
+Parsing VHDL file "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/hdl/digilent_sevseg_disp_wrapper.vhd" into library work
+Parsing entity <digilent_sevseg_disp_wrapper>.
+Parsing architecture <STRUCTURE> of entity <digilent_sevseg_disp_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <digilent_sevseg_disp_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <ssg_decoder> (architecture <IMP>) with generics from library <ssg_decoder_v1_00_a>.
+
+Elaborating entity <plbv46_slave_single> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_slave_attachment> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_address_decoder> (architecture <IMP>) with generics from library <plbv46_slave_single_v1_01_a>.
+WARNING:HDLCompiler:1127 - "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 319: Assignment to cs_s_h_clr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 323: Assignment to addr_match_clr ignored, since the identifier is never used
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_gate128> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_muxcy> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 711. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 1025: Assignment to start_data_phase ignored, since the identifier is never used
+
+Elaborating entity <counter_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <ssg_decoder_v1_00_a>.
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <clk> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <reset> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <din> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <seg_data> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <refresh_rate_div> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <blank> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <autoblank> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <blink> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <blink_rate> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <use_segment_data> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <an> is not explicitly declared. This is valid but affects code readability
+INFO:HDLCompiler:1671 - "(null)" Line 0. The direction of input port <seg> is not explicitly declared. This is valid but affects code readability
+Going to verilog side to elaborate module Ssg_decoder_core
+
+Elaborating module <Ssg_decoder_core(CLK_FREQUENCY_HZ=66666667,ANODE_ACTIVE_LOW=1)>.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <digilent_sevseg_disp_wrapper>.
+    Related source file is "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/hdl/digilent_sevseg_disp_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <digilent_sevseg_disp_wrapper> synthesized.
+
+Synthesizing Unit <ssg_decoder>.
+    Related source file is "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/ssg_decoder.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        CLK_FREQUENCY_HZ = 66666667
+        ANODE_ACTIVE_LOW = 1
+        C_BASEADDR = "11001101011000000000000000000000"
+        C_HIGHADDR = "11001101011000001111111111111111"
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SPLB_NUM_MASTERS = 2
+        C_SPLB_MID_WIDTH = 1
+        C_SPLB_NATIVE_DWIDTH = 32
+        C_SPLB_P2P = 0
+        C_SPLB_SUPPORT_BURSTS = 0
+        C_SPLB_SMALLEST_MASTER = 32
+        C_SPLB_CLK_PERIOD_PS = 15000
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_FAMILY = "spartan6"
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/ssg_decoder.vhd" line 305: Output port <Bus2IP_Addr> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/ssg_decoder.vhd" line 305: Output port <Bus2IP_CS> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/ssg_decoder.vhd" line 305: Output port <Bus2IP_RNW> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ssg_decoder> synthesized.
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011001101011000000000000000000000","0000000000000000000000000000000011001101011000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_SPLB_MID_WIDTH = 1
+        C_SPLB_NUM_MASTERS = 2
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SIPIF_DWIDTH = 32
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_MSize<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <plbv46_slave_single> synthesized.
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011001101011000000000000000000000","0000000000000000000000000000000011001101011000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_PLB_NUM_MASTERS = 2
+        C_PLB_MID_WIDTH = 1
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_DPHASE_TIMEOUT = 128
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_UABus<0:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" line 1201: Output port <Count_Out> of the instance <INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER> is unconnected or connected to loadless signal.
+    Register <wr_clear_sl_busy> equivalent to <sl_wrdack_i> has been removed
+    Register <sl_wrcomp_i> equivalent to <sl_wrdack_i> has been removed
+    Register <set_sl_busy> equivalent to <sl_addrack_i> has been removed
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 1-bit register for signal <plb_masterid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 1-bit register for signal <GEN_FOR_SHARED.addr_cntl_cs>.
+    Found 1-bit register for signal <sl_addrack_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <master_id>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 2-bit register for signal <sl_mbusy_i>.
+    Found 2-bit register for signal <sl_mrderr_i>.
+    Found 2-bit register for signal <sl_mwrerr_i>.
+    Found 1-bit register for signal <sl_wrdack_i>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Summary:
+	inferred 193 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <plb_slave_attachment> synthesized.
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+        C_BUS_AWIDTH = 32
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011001101011000000000000000000000","0000000000000000000000000000000011001101011000001111111111111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_SPLB_P2P = 0
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <addr_out_s_h>.
+    Found 1-bit register for signal <MEM_DECODE_GEN[0].GEN_PLB_SHARED.cs_out_s_h>.
+    Found 1-bit register for signal <cs_out_i>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Found 1-bit register for signal <rdce_out_i<1>>.
+    Found 1-bit register for signal <wrce_out_i<1>>.
+    Found 1-bit register for signal <rdce_out_i<2>>.
+    Found 1-bit register for signal <wrce_out_i<2>>.
+    Found 1-bit register for signal <rdce_out_i<3>>.
+    Found 1-bit register for signal <wrce_out_i<3>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 16
+        C_AW = 32
+        C_BAR = "11001101011000000000000000000000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<16:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "00"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "01"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "10"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "11"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+        C_OR_WIDTH = 1
+        C_BUS_WIDTH = 1
+        C_USE_LUT_OR = false
+    Summary:
+	no macro.
+Unit <or_gate128> synthesized.
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+        C_NUM_BITS = 1
+    Summary:
+	no macro.
+Unit <or_muxcy> synthesized.
+
+Synthesizing Unit <counter_f>.
+    Related source file is "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+        C_NUM_BITS = 8
+        C_FAMILY = "nofamily"
+    Found 9-bit register for signal <INFERRED_GEN.icount_out>.
+    Found 9-bit subtractor for signal <INFERRED_GEN.icount_out[8]_GND_23_o_mux_5_OUT> created at line 292.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+Unit <counter_f> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        CLK_FREQUENCY_HZ = 66666667
+        ANODE_ACTIVE_LOW = 1
+        C_SLV_DWIDTH = 32
+        C_NUM_REG = 4
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Found 32-bit register for signal <CTRL_REG>.
+    Found 32-bit register for signal <SEGMENT_REG>.
+    Found 32-bit register for signal <REFRESH_DIV_REG>.
+    Found 32-bit register for signal <HEX_DATA_REG>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred 139 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <Ssg_decoder_core>.
+    Related source file is "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/hdl/verilog/Ssg_decoder_core.v".
+        CLK_FREQUENCY_HZ = 66666667
+        ANODE_ACTIVE_LOW = 1
+    Found 4-bit register for signal <An_Int>.
+    Found 32-bit register for signal <BLINK_div>.
+    Found 1-bit register for signal <BLINK_CE>.
+    Found 24-bit register for signal <CE_div>.
+    Found 25-bit subtractor for signal <GND_29_o_GND_29_o_sub_2_OUT> created at line 80.
+    Found 32-bit subtractor for signal <BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT> created at line 103.
+    Found 24-bit adder for signal <CE_div[23]_GND_29_o_add_3_OUT> created at line 81.
+    Found 32-bit adder for signal <BLINK_div[31]_GND_29_o_add_13_OUT> created at line 104.
+    Found 32-bit comparator equal for signal <CE_An> created at line 80
+    Found 32-bit comparator greater for signal <n0008> created at line 103
+    Found 32-bit comparator equal for signal <BLINK_div[31]_BLINK_DIV_VAL[31]_equal_20_o> created at line 109
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  61 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred 130 Multiplexer(s).
+Unit <Ssg_decoder_core> synthesized.
+RTL-Simplification CPUSTAT: 0.19 
+RTL-BasicInf CPUSTAT: 0.47 
+RTL-BasicOpt CPUSTAT: 0.00 
+RTL-Remain-Bus CPUSTAT: 0.00 
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 24-bit adder                                          : 1
+ 25-bit subtractor                                     : 1
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 40
+ 1-bit register                                        : 17
+ 2-bit register                                        : 3
+ 24-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 10
+ 4-bit register                                        : 7
+ 9-bit register                                        : 1
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 286
+ 1-bit 2-to-1 multiplexer                              : 271
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Ssg_decoder_core>.
+The following registers are absorbed into counter <BLINK_div>: 1 register on signal <BLINK_div>.
+The following registers are absorbed into counter <CE_div>: 1 register on signal <CE_div>.
+Unit <Ssg_decoder_core> synthesized (advanced).
+WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <plb_address_decoder>.
+WARNING:Xst:2677 - Node <addr_out_s_h_2> of sequential type is unconnected in block <plb_address_decoder>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 25-bit subtractor                                     : 1
+ 32-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 24-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 349
+ Flip-Flops                                            : 349
+# Comparators                                          : 3
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 281
+ 1-bit 2-to-1 multiplexer                              : 266
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 2
+ 32-bit 2-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch master_id_31 hinder the constant cleaning in the block plb_slave_attachment.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <master_id_30> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_29> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_28> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_27> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_26> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_25> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_24> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_23> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_22> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_21> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_20> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_19> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_18> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_17> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_16> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_15> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_14> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_13> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_12> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_11> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_10> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_9> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_8> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_7> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_6> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_5> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_4> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_3> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_2> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_1> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <GEN_FOR_SHARED.addr_cntl_cs> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+
+Optimizing unit <digilent_sevseg_disp_wrapper> ...
+
+Optimizing unit <plb_slave_attachment> ...
+
+Optimizing unit <plb_address_decoder> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <Ssg_decoder_core> ...
+WARNING:Xst:1710 - FF/Latch <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_16> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_17> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_18> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_19> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_20> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_21> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_22> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_23> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:2677 - Node <Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN<0>.GEN_PLB_SHARED.cs_out_s_h_0> of sequential type is unconnected in block <digilent_sevseg_disp_wrapper>.
+WARNING:Xst:1710 - FF/Latch <Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_31> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_30> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_28> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_27> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_29> (without init value) has a constant value of 0 in block <digilent_sevseg_disp_wrapper>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block digilent_sevseg_disp_wrapper, actual ratio is 6.
+FlipFlop Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13 has been replicated 1 time(s)
+FlipFlop Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_14 has been replicated 1 time(s)
+FlipFlop Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_15 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 320
+ Flip-Flops                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : digilent_sevseg_disp_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 721
+#      GND                         : 1
+#      INV                         : 27
+#      LUT1                        : 52
+#      LUT2                        : 19
+#      LUT3                        : 201
+#      LUT4                        : 42
+#      LUT5                        : 20
+#      LUT6                        : 123
+#      MUXCY                       : 131
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 103
+# FlipFlops/Latches                : 320
+#      FD                          : 53
+#      FDP                         : 4
+#      FDR                         : 110
+#      FDRE                        : 137
+#      FDS                         : 6
+#      FDSE                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             320  out of  18224     1%  
+ Number of Slice LUTs:                  484  out of   9112     5%  
+    Number used as Logic:               484  out of   9112     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    538
+   Number with an unused Flip Flop:     218  out of    538    40%  
+   Number with an unused LUT:            54  out of    538    10%  
+   Number of fully used LUT-FF pairs:   266  out of    538    49%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                         213
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                           | Load  |
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+SPLB_Clk                           | NONE(Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_timeout)| 320   |
+-----------------------------------+---------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.273ns (Maximum Frequency: 189.648MHz)
+   Minimum input arrival time before clock: 2.289ns
+   Maximum output required time after clock: 4.369ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 5.273ns (frequency: 189.648MHz)
+  Total number of paths / destination ports: 53166 / 467
+-------------------------------------------------------------------------
+Delay:               5.273ns (Levels of Logic = 29)
+  Source:            Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13_1 (FF)
+  Destination:       Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13_1 to Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.447   1.031  Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13_1 (Digilent_SevSeg_Disp/USER_LOGIC_I/CTRL_REG_13_1)
+     LUT3:I0->O            1   0.205   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_DIV_VAL<32>1 (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_DIV_VAL<0>)
+     MUXCY:S->O            1   0.172   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<0> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<1> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<2> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<3> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<4> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<5> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<6> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<7> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<8> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<9> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<10> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<11> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<12> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<13> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<14> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<15> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<16> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<17> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<18> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<19> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_cy<19>)
+     XORCY:CI->O           3   0.180   0.898  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Msub_BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT_xor<20> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_DIV_VAL[31]_GND_29_o_sub_12_OUT<20>)
+     LUT4:I0->O            1   0.203   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_lut<10> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_lut<10>)
+     MUXCY:S->O            1   0.172   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<10> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<11> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<12> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<13> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<13>)
+     MUXCY:CI->O          27   0.019   1.221  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<14> (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mcompar_n0008_cy<14>)
+     LUT3:I2->O            1   0.205   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25_rstpot (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25_rstpot)
+     FD:D                      0.102          Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/BLINK_div_25
+    ----------------------------------------
+    Total                      5.273ns (2.123ns logic, 3.150ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 377 / 377
+-------------------------------------------------------------------------
+Offset:              2.289ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O           32   0.203   1.291  Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/ip2bus_rdack_i_data_timeout_AND_17_o_inv_01 (Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/ip2bus_rdack_i_data_timeout_AND_17_o_inv_0)
+     FDR:R                     0.430          Digilent_SevSeg_Disp/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_31
+    ----------------------------------------
+    Total                      2.289ns (0.998ns logic, 1.291ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 493 / 52
+-------------------------------------------------------------------------
+Offset:              4.369ns (Levels of Logic = 3)
+  Source:            Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_3 (FF)
+  Destination:       SEG<7> (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_3 to SEG<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             29   0.447   1.614  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_3 (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/An_Int_3)
+     LUT6:I0->O            1   0.203   0.580  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mmux_mux_data<0>11 (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mmux_mux_data<0>1)
+     LUT6:I5->O            7   0.205   1.118  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mmux_mux_data<0>12 (Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/mux_data<0>)
+     LUT6:I1->O            0   0.203   0.000  Digilent_SevSeg_Disp/USER_LOGIC_I/SSG_DECODER_INST/Mmux_SEG<1>24 (SEG<1>)
+    ----------------------------------------
+    Total                      4.369ns (1.058ns logic, 3.311ns route)
+                                       (24.2% logic, 75.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SPLB_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SPLB_Clk       |    5.273|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 12.95 secs
+ 
+--> 
+
+
+Total memory usage is 327420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  121 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

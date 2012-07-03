@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx16csg324-3
+-top proc_sys_reset_0_wrapper
+-ifmt MIXED
+-ifn proc_sys_reset_0_wrapper_xst.prj
+-ofn ../implementation/proc_sys_reset_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/proc_sys_reset_0_wrapper}
+-vlgincdir {"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/pcores/" "/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/" "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }

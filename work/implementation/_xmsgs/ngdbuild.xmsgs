@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="1445" delta="old" >No net associated with <arg fmt="%s" index="1">fpga_0_Ethernet_Lite_PHY_rx_clk_pin</arg> from OFFSET constraint <arg fmt="%s" index="2">&lt;OFFSET = IN 6.000 BEFORE  &quot;fpga_0_Ethernet_Lite_PHY_rx_clk_pin&quot;;&gt; [/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implementation/ethernet_lite_wrapper.ncf(3)]</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="931" delta="old" >The value of SIM_DEVICE on instance &apos;<arg fmt="%s" index="1">clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst</arg>&apos; of type <arg fmt="%s" index="2">PLL_ADV</arg> has been changed from &apos;<arg fmt="%s" index="3">VIRTEX5</arg>&apos; to &apos;<arg fmt="%s" index="4">SPARTAN6</arg>&apos; to correct post-ngdbuild and timing simulation for this primitive.  In order for functional simulation to be correct, the value of SIM_DEVICE should be changed in this same manner in the source netlist or constraint file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">sys_clk_pin</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_sys_clk_pin</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PERIOD &quot;clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0&quot; TS_sys_clk_pin * 0.666666667 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.I_BKEND_CS_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/COLLISION_SYNC</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_0/microblaze_0/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_EX_Result_Inst</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKEND_WRCE_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKEND_RDCE_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[31].ADDRESS_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[30].ADDRESS_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[6].READ_COMPLETE_PIPE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKEND_WRCE_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKEND_RDCE_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FDRE_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[31].ADDRESS_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[30].ADDRESS_REG</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE_GEN[1].AALIGN_PIPE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[6].READ_COMPLETE_PIPE</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[20].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[19].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[18].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[17].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[16].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[15].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[14].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[13].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[12].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[11].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[10].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[9].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[8].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[7].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[6].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[5].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[4].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[3].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[2].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[1].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[0].TCSR1_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[20].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[19].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[18].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[17].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[16].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[15].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[14].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[13].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[12].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[11].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[10].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[9].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[8].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[7].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[6].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[5].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[4].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[3].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[2].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[1].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[0].TCSR0_FF_I</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">mdm_0/bscan_drck1</arg> with clock driver <arg fmt="%s" index="2">mdm_0/mdm_0/BUFG_DRCK1</arg> drives no clock pins
+</msg>
+
+</messages>
+

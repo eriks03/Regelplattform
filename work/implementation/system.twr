@@ -1,0 +1,193 @@
+--------------------------------------------------------------------------------
+Release 13.1 Trace  (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+/sse/eda/xilinx-13.1/ISE_DS/ISE/bin/lin64/unwrapped/trce -e 3 -xml system.twx
+system.ncd system.pcf
+
+Design file:              system.ncd
+Physical constraint file: system.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.18 2011-04-07)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_Lite_PHY_tx_clk_pin_IBUF" MAXSKEW = 6 
+ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   0.181ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_Lite_PHY_tx_clk_pin_IBUF" PERIOD = 40 
+ns HIGH 14 ns;
+
+ 165 paths analyzed, 110 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.229ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_Lite_PHY_rx_clk_pin_IBUF" MAXSKEW = 6 
+ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   0.049ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "fpga_0_Ethernet_Lite_PHY_rx_clk_pin_IBUF" PERIOD = 40 
+ns HIGH 14 ns;
+
+ 142 paths analyzed, 131 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.597ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TSTXOUT_Ethernet_Lite = MAXDELAY FROM TIMEGRP 
+"TXCLK_GRP_Ethernet_Lite" TO         TIMEGRP "PADS" 10 ns;
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   3.457ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   3.334ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0" 
+TS_sys_clk_pin         * 0.666666667 HIGH 50%;
+
+ 547419 paths analyzed, 25073 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  14.678ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = IN 6 ns BEFORE COMP 
+"fpga_0_Ethernet_Lite_PHY_rx_clk_pin";
+
+ 6 paths analyzed, 6 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   0.141ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     10.000ns|      3.334ns|      9.785ns|            0|            0|            0|       547419|
+| TS_clock_generator_0_clock_gen|     15.000ns|     14.678ns|          N/A|            0|            0|       547419|            0|
+| erator_0_SIG_PLL0_CLKOUT0     |             |             |             |             |             |             |             |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock fpga_0_Ethernet_Lite_PHY_rx_clk_pin
+---------------------------------------+------------+------------+------------+------------+-------------------------------------------+--------+
+                                       |Max Setup to|  Process   |Max Hold to |  Process   |                                           | Clock  |
+Source                                 | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                          | Phase  |
+---------------------------------------+------------+------------+------------+------------+-------------------------------------------+--------+
+fpga_0_Ethernet_Lite_PHY_dv_pin        |    0.114(R)|      FAST  |    1.354(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_rx_data_pin<0>|    0.114(R)|      FAST  |    1.354(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_rx_data_pin<1>|    0.141(R)|      FAST  |    1.295(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_rx_data_pin<2>|    0.110(R)|      FAST  |    1.358(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_rx_data_pin<3>|    0.140(R)|      FAST  |    1.296(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_rx_er_pin     |    0.109(R)|      FAST  |    1.359(R)|      SLOW  |Ethernet_Lite/Ethernet_Lite/phy_rx_clk_core|   0.000|
+---------------------------------------+------------+------------+------------+------------+-------------------------------------------+--------+
+
+Clock fpga_0_Ethernet_Lite_PHY_tx_clk_pin to Pad
+---------------------------------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+                                       |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                           | Clock  |
+Destination                            |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                          | Phase  |
+---------------------------------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+fpga_0_Ethernet_Lite_PHY_tx_data_pin<0>|         9.454(R)|      SLOW  |         5.247(R)|      FAST  |Ethernet_Lite/Ethernet_Lite/phy_tx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_tx_data_pin<1>|         9.454(R)|      SLOW  |         5.247(R)|      FAST  |Ethernet_Lite/Ethernet_Lite/phy_tx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_tx_data_pin<2>|         9.449(R)|      SLOW  |         5.242(R)|      FAST  |Ethernet_Lite/Ethernet_Lite/phy_tx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_tx_data_pin<3>|         9.449(R)|      SLOW  |         5.242(R)|      FAST  |Ethernet_Lite/Ethernet_Lite/phy_tx_clk_core|   0.000|
+fpga_0_Ethernet_Lite_PHY_tx_en_pin     |         9.455(R)|      SLOW  |         5.248(R)|      FAST  |Ethernet_Lite/Ethernet_Lite/phy_tx_clk_core|   0.000|
+---------------------------------------+-----------------+------------+-----------------+------------+-------------------------------------------+--------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_Lite_PHY_rx_clk_pin
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_Lite_PHY_rx_clk_pin|         |         |    2.659|    2.555|
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_Ethernet_Lite_PHY_tx_clk_pin
+-----------------------------------+---------+---------+---------+---------+
+                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------+---------+---------+---------+---------+
+fpga_0_Ethernet_Lite_PHY_tx_clk_pin|    5.229|         |         |         |
+-----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock fpga_0_clk_1_sys_clk_pin
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+fpga_0_clk_1_sys_clk_pin|   14.678|    3.345|    3.444|         |
+------------------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 547737 paths, 2 nets, and 28520 connections
+
+Design statistics:
+   Minimum period:  14.678ns   (Maximum frequency:  68.129MHz)
+   Maximum path delay from/to any node:   3.457ns
+   Maximum net skew:   0.181ns
+   Minimum input required time before clock:   0.141ns
+
+
+Analysis completed Mon Jun 25 17:45:43 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 403 MB
+
+
+

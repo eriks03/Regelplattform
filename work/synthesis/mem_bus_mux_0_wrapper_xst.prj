@@ -1,0 +1,2 @@
+vhdl mem_bus_mux_v1_00_a /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/mem_bus_mux_v1_00_a/hdl/vhdl/mem_bus_mux.vhd
+vhdl work ../hdl/mem_bus_mux_0_wrapper.vhd

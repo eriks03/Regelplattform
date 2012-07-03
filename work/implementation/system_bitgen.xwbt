@@ -1,0 +1,7 @@
+INFILE=/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implementation/system.ncd
+OUTFILE=/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implementation/system.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implementation
+LICENSE=ISE
+USER_INFO=174110713_178259181_203950_967

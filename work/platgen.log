@@ -1,0 +1,441 @@
+Release 13.1 - platgen Xilinx EDK 13.1 Build EDK_O.40d
+ (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc6slx16csg324-3 -lang vhdl -lp
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3
+_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/ -msg __xps/ise/xmsgprops.lst
+system.mhs 
+
+WARNING:EDK - INFO:Security:67 - XILINXD_LICENSE_FILE is set to
+   '/sse/eda/xilinx-13.1/ISE_DS/EDK/data/core_licenses' in
+   /export/black/eriks/.flexlmrc.
+   INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+   '26751@black'.
+   INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+   INFO:Security:56 - Part 'xc6slx16' is not a WebPack part.
+   WARNING:Security:43 - No license file was found in the standard Xilinx
+   license directory.
+   WARNING:Security:44 - No license file was found.
+          Please run the Xilinx License Configuration Manager
+          (xlcm or "Manage Xilinx Licenses")
+          to assist in obtaining a license.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+orig_family is spartan6
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tcl is overriding
+   PARAMETER C_FAMILY value to spartan6 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetli
+   te_v4_00_a/data/xps_ethernetlite_v2_1_0.mpd line 69 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00003fff) dlmb_cntlr	dlmb
+  (0000000000-0x00003fff) ilmb_cntlr	ilmb
+  (0x80000000-0x80ffffff) Micron_RAM	mb_plb
+  (0x80000000-0x80ffffff) Micron_RAM	microblaze_0_DXCL
+  (0x80000000-0x80ffffff) Micron_RAM	microblaze_0_IXCL
+  (0x81000000-0x8100ffff) Ethernet_Lite	mb_plb
+  (0x81400000-0x8140ffff) Push_Buttons_4Bits	mb_plb
+  (0x81420000-0x8142ffff) LEDs_8Bits	mb_plb
+  (0x81800000-0x8180ffff) xps_intc_0	mb_plb
+  (0x82000000-0x82ffffff) Numonyx_PCM	mb_plb
+  (0x83c00000-0x83c0ffff) xps_timer_0	mb_plb
+  (0x84000000-0x8400ffff) RS232_Uart_1	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+  (0xcd600000-0xcd60ffff) Digilent_SevSeg_Disp	mb_plb
+  (0xce400000-0xce40ffff) Digilent_QuadSPI_Cntlr	mb_plb
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE: Ethernet_Lite - This design
+   requires design constraints to guarantee performance.
+   Please refer to the data sheet for details.  
+   The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs
+   Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet
+   operation. -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system
+   .mhs line 165
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_
+   a/data/plb_v46_v2_1_0.mpd line 69 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 11 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_
+   a/data/plb_v46_v2_1_0.mpd line 70 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_
+   a/data/plb_v46_v2_1_0.mpd line 71 
+INFO:EDK - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_
+   a/data/plb_v46_v2_1_0.mpd line 73 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_
+   a/data/lmb_v10_v2_1_0.mpd line 70 
+INFO:EDK - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_
+   a/data/lmb_v10_v2_1_0.mpd line 70 
+INFO:EDK - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding PARAMETER
+   C_MEMSIZE value to 0x4000 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_
+   00_a/data/bram_block_v2_1_0.mpd line 67 
+INFO:EDK - IPNAME: xps_uartlite, INSTANCE:RS232_Uart_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v
+   1_01_a/data/xps_uartlite_v2_1_0.mpd line 74 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:LEDs_8Bits - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00
+   _a/data/xps_gpio_v2_1_0.mpd line 72 
+INFO:EDK - IPNAME: xps_gpio, INSTANCE:Push_Buttons_4Bits - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00
+   _a/data/xps_gpio_v2_1_0.mpd line 72 
+INFO:EDK - IPNAME: xps_ethernetlite, INSTANCE:Ethernet_Lite - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetli
+   te_v4_00_a/data/xps_ethernetlite_v2_1_0.mpd line 77 
+INFO:EDK - IPNAME: xps_mch_emc, INSTANCE:Micron_RAM - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3
+   _01_a/data/xps_mch_emc_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_mch_emc, INSTANCE:Numonyx_PCM - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3
+   _01_a/data/xps_mch_emc_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: quad_spi_if, INSTANCE:Digilent_QuadSPI_Cntlr - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_
+   v1_00_a/data/quad_spi_if_v2_1_0.mpd line 32 
+INFO:EDK - IPNAME: quad_spi_if, INSTANCE:Digilent_QuadSPI_Cntlr - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_
+   v1_00_a/data/quad_spi_if_v2_1_0.mpd line 33 
+INFO:EDK - IPNAME: quad_spi_if, INSTANCE:Digilent_QuadSPI_Cntlr - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_
+   v1_00_a/data/quad_spi_if_v2_1_0.mpd line 34 
+INFO:EDK - IPNAME: ssg_decoder, INSTANCE:Digilent_SevSeg_Disp - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_
+   v1_00_a/data/ssg_decoder_v2_1_0.mpd line 33 
+INFO:EDK - IPNAME: ssg_decoder, INSTANCE:Digilent_SevSeg_Disp - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_
+   v1_00_a/data/ssg_decoder_v2_1_0.mpd line 34 
+INFO:EDK - IPNAME: ssg_decoder, INSTANCE:Digilent_SevSeg_Disp - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nex
+   ys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_
+   v1_00_a/data/ssg_decoder_v2_1_0.mpd line 35 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 83 
+INFO:EDK - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 84 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01
+   _a/data/xps_intc_v2_1_0.mpd line 73 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_0
+   2_a/data/xps_timer_v2_1_0.mpd line 77 
+INFO:EDK - IPNAME: xps_timer, INSTANCE:xps_timer_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_0
+   2_a/data/xps_timer_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 11 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found. Port
+   will be driven to GND -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 230 
+WARNING:EDK - PORT: ICACHE_FSL_IN_CLK, CONNECTOR: microblaze_0_IXCL_FSL_S_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 963 
+WARNING:EDK - PORT: ICACHE_FSL_OUT_CLK, CONNECTOR: microblaze_0_IXCL_FSL_M_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 968 
+WARNING:EDK - PORT: DCACHE_FSL_IN_CLK, CONNECTOR: microblaze_0_DXCL_FSL_S_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 973 
+WARNING:EDK - PORT: DCACHE_FSL_OUT_CLK, CONNECTOR: microblaze_0_DXCL_FSL_M_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 978 
+WARNING:EDK - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 223 
+WARNING:EDK - PORT: bscan_reset, CONNECTOR: bscan_reset - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 224 
+WARNING:EDK - PORT: bscan_shift, CONNECTOR: bscan_shift - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 225 
+WARNING:EDK - PORT: bscan_update, CONNECTOR: bscan_update - floating connection
+   -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 226 
+WARNING:EDK - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+   connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 227 
+WARNING:EDK - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 228 
+WARNING:EDK - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 229 
+WARNING:EDK - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset - floating
+   connection -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system
+   .mhs line 350 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 217 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 220 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 6 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 320 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 6 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 350 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_INTERRUPT value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 384 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 385 
+INFO:EDK - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 386 
+INFO:EDK - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is overriding
+   PARAMETER C_MASK value to 0x80000000 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cn
+   tlr_v3_00_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is overriding
+   PARAMETER C_MASK value to 0x80000000 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cn
+   tlr_v3_00_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding PARAMETER
+   C_NUM_INTR_INPUTS value to 3 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01
+   _a/data/xps_intc_v2_1_0.mpd line 77 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_INTR value to 0b11111111111111111111111111111111 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01
+   _a/data/xps_intc_v2_1_0.mpd line 78 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01
+   _a/data/xps_intc_v2_1_0.mpd line 79 
+INFO:EDK - IPNAME: xps_intc, INSTANCE:xps_intc_0 - tcl is overriding PARAMETER
+   C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01
+   _a/data/xps_intc_v2_1_0.mpd line 80 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Port present in Ethernet_Lite
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The ilmb core has constraints automatically generated by XPS in
+implementation/ilmb_wrapper/ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The dlmb core has constraints automatically generated by XPS in
+implementation/dlmb_wrapper/dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: The Ethernet_Lite core has constraints automatically generated by XPS in
+implementation/ethernet_lite_wrapper/ethernet_lite_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:plb_v46 INSTANCE:mb_plb -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 78 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:ilmb -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 85 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:dlmb -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 92 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:dlmb_cntlr -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 99 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:ilmb_cntlr -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 108 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:lmb_bram -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 117 - Copying cache implementation netlist
+IPNAME:xps_uartlite INSTANCE:rs232_uart_1 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 124 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:leds_8bits -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 139 - Copying cache implementation netlist
+IPNAME:xps_gpio INSTANCE:push_buttons_4bits -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 152 - Copying cache implementation netlist
+IPNAME:xps_ethernetlite INSTANCE:ethernet_lite -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 165 - Copying cache implementation netlist
+IPNAME:xps_mch_emc INSTANCE:micron_ram -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 187 - Copying cache implementation netlist
+IPNAME:xps_mch_emc INSTANCE:numonyx_pcm -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 219 - Copying cache implementation netlist
+IPNAME:quad_spi_if INSTANCE:digilent_quadspi_cntlr -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 251 - Copying cache implementation netlist
+IPNAME:ssg_decoder INSTANCE:digilent_sevseg_disp -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 264 - Copying cache implementation netlist
+IPNAME:mem_bus_mux INSTANCE:mem_bus_mux_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 275 - Copying cache implementation netlist
+IPNAME:mdm INSTANCE:mdm_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 328 - Copying cache implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 340 - Copying cache implementation netlist
+IPNAME:xps_intc INSTANCE:xps_intc_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 353 - Copying cache implementation netlist
+IPNAME:xps_timer INSTANCE:xps_timer_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 363 - Copying cache implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 117 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 313 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INSTANCE:microblaze_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 52 - Running XST synthesis
+INSTANCE:clock_generator_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 313 - Running XST synthesis
+
+Running NGCBUILD ...
+IPNAME:microblaze_0_wrapper INSTANCE:microblaze_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 52 - Running NGCBUILD
+IPNAME:clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mh
+s line 313 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 90.00 seconds

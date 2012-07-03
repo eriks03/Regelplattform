@@ -1,0 +1,361 @@
+Release 13.1 ngdbuild O.40d (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: /sse/eda/xilinx-13.1/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -p
+xc6slx16csg324-3 -nt timestamp -bm system.bmm
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implement
+ation/system.ngc -uc system.ucf system.ngd
+
+Reading NGO file
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/system.ngc" ...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/push_buttons_4bits_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/ethernet_lite_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/rs232_uart_1_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/clock_generator_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/proc_sys_reset_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/microblaze_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/mb_plb_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/ilmb_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/dlmb_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/dlmb_cntlr_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/ilmb_cntlr_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/leds_8bits_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/micron_ram_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/numonyx_pcm_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/digilent_quadspi_cntlr_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/digilent_sevseg_disp_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/mdm_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/xps_intc_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/xps_timer_0_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/lmb_bram_wrapper.ngc"...
+Loading design module
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/mem_bus_mux_0_wrapper.ngc"...
+Applying constraints in
+"/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/implemen
+tation/ethernet_lite_wrapper.ncf" to module "Ethernet_Lite"...
+Checking Constraint Associations...
+WARNING:NgdBuild:1445 - No net associated with
+   fpga_0_Ethernet_Lite_PHY_rx_clk_pin from OFFSET constraint <OFFSET = IN 6.000
+   BEFORE  "fpga_0_Ethernet_Lite_PHY_rx_clk_pin";>
+   [/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/imple
+   mentation/ethernet_lite_wrapper.ncf(3)]
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+WARNING:NgdBuild:931 - The value of SIM_DEVICE on instance
+   'clock_generator_0/clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst' of
+   type PLL_ADV has been changed from 'VIRTEX5' to 'SPARTAN6' to correct
+   post-ngdbuild and timing simulation for this primitive.  In order for
+   functional simulation to be correct, the value of SIM_DEVICE should be
+   changed in this same manner in the source netlist or constraint file.
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into PLL_ADV instance
+   clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst. The following new TNM
+   groups and period specifications were generated at the PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0" TS_sys_clk_pin
+   * 0.666666667 HIGH 50%>
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACH
+   MENT/I_DECODER/MEM_DECODE_GEN[0].GEN_PLB_SHARED.I_BKEND_CS_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACH
+   MENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_REG'
+   has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACH
+   MENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_SIZE_S_H_RE
+   G' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACH
+   MENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].F
+   DRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/XPS_IPIF_I/PLBV46_BURST_I/I_SLAVE_ATTACH
+   MENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADDSUB_GEN[5].FD
+   RE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Ethernet_Lite/Ethernet_Lite/XEMAC_I/EMAC_I/COLLISION_SYNC' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/Performance.Decode_I/Using_FPGA.Gen_Bits[27].MEM_E
+   X_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I
+   _BKEND_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I
+   _BKEND_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0
+   ].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG
+   [0].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.
+   I_ADDSUB_GEN[5].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/MCH_PLB_IPIF_I/INCLUDE_PLB_IPIF_GEN.PLBV46_SLAVE_BURST
+   _I/I_SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I
+   _ADDSUB_GEN[5].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[31].AD
+   DRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[30].AD
+   DRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADDR_
+   CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC' has unconnected output
+   pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PIPE
+   _GEN[1].AALIGN_PIPE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Micron_RAM/Micron_RAM/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GEN[
+   6].READ_COMPLETE_PIPE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKE
+   ND_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_DECODER/GEN_CE_FOR_SHARED.GEN_BKEND_CE_REGISTERS[0].I_BKE
+   ND_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_BUS_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].I_
+   SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_STEER_ADDRESS_COUNTER/GEN_FOR_SHARED.GEN_S_H_SIZE_REG[0].
+   I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_BURST_SUPPORT/RESPONSE_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_AD
+   DSUB_GEN[5].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/MCH_PLB_IPIF_I/NO_CHNL_IF_GEN.PLBV46_SLAVE_BURST_I/I
+   _SLAVE_ATTACHMENT/I_BURST_SUPPORT/CONTROL_DBEAT_CNTR_I/STRUCTURAL_A_GEN.I_ADD
+   SUB_GEN[5].FDRE_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[31].
+   ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/ADDR_COUNTER_MUX_I/ADDRESS_STORE_GEN[30].
+   ADDRESS_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STEER_I/RDDATA_PATH_MUX_GEN.ASYNC_ADD
+   R_CNT_GEN.RDDATA_EN_GEN_ASYNC[3].RDDATA_EN_REG_ASYNC' has unconnected output
+   pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STEER_I/ASYNC_MEM_RDACK_GEN.AALIGN_PI
+   PE_GEN[1].AALIGN_PIPE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'Numonyx_PCM/Numonyx_PCM/EMC_CTRL_I/MEM_STATE_MACHINE_I/READ_COMPLETE_PIPE_GE
+   N[6].READ_COMPLETE_PIPE' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[20].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[19].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[18].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[17].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[16].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[15].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[14].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[13].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[12].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[11].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[10].TCSR1_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[9].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[8].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[7].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[6].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[5].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[4].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[3].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[2].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[1].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[0].TCSR1_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[20].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[19].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[18].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[17].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[16].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[15].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[14].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[13].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[12].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[11].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[10].TCSR0_F
+   F_I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[9].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[8].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[7].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[6].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[5].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[4].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[3].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[2].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[1].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'xps_timer_0/xps_timer_0/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[0].TCSR0_FF
+   _I' has unconnected output pin
+WARNING:NgdBuild:478 - clock net mdm_0/bscan_drck1 with clock driver
+   mdm_0/mdm_0/BUFG_DRCK1 drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  74
+
+Total memory usage is 377480 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  21 sec
+Total CPU time to NGDBUILD completion:   20 sec
+
+Writing NGDBUILD log file "system.bld"...

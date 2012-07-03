@@ -1,0 +1,9 @@
+-p
+xc6slx16csg324-3
+-lang
+vhdl
+-lp
+/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/
+-msg
+__xps/ise/xmsgprops.lst
+system.mhs

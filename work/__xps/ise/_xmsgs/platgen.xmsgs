@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">INFO:Security:67 - XILINXD_LICENSE_FILE is set to &apos;/sse/eda/xilinx-13.1/ISE_DS/EDK/data/core_licenses&apos; in /export/black/eriks/.flexlmrc.
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to &apos;26751@black&apos;.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:56 - Part &apos;xc6slx16&apos; is not a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or &quot;Manage Xilinx Licenses&quot;)
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+</arg>
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_ethernetlite</arg>, INSTANCE:<arg fmt="%s" index="2">Ethernet_Lite</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FAMILY</arg> value to <arg fmt="%s" index="6">spartan6</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v4_00_a/data/xps_ethernetlite_v2_1_0.mpd line 69</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">ilmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">dlmb_cntlr</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_ethernetlite</arg>, INSTANCE: <arg fmt="%s" index="2">Ethernet_Lite</arg> - <arg fmt="%s" index="3">This design requires design constraints to guarantee performance.
+Please refer to the data sheet for details.  
+The PLB clock frequency must be greater than or equal to 50 MHz for 100 Mbs Ethernet operation and greater than or equal to 5.0 MHz for 10 Mbs Ethernet operation.</arg> - <arg fmt="%s" index="4">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mhs line 165</arg>
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/plb_v46_v2_1_0.mpd line 69</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">11</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/plb_v46_v2_1_0.mpd line 70</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/plb_v46_v2_1_0.mpd line 71</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">plb_v46</arg>, INSTANCE:<arg fmt="%s" index="2">mb_plb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_PLBV46_DWIDTH</arg> value to <arg fmt="%s" index="6">32</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/plb_v46_v2_1_0.mpd line 73</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">ilmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_a/data/lmb_v10_v2_1_0.mpd line 70</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">dlmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_a/data/lmb_v10_v2_1_0.mpd line 70</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">lmb_bram</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x4000</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 67</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_uartlite</arg>, INSTANCE:<arg fmt="%s" index="2">RS232_Uart_1</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01_a/data/xps_uartlite_v2_1_0.mpd line 74</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_gpio</arg>, INSTANCE:<arg fmt="%s" index="2">LEDs_8Bits</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/data/xps_gpio_v2_1_0.mpd line 72</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_gpio</arg>, INSTANCE:<arg fmt="%s" index="2">Push_Buttons_4Bits</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_gpio_v2_00_a/data/xps_gpio_v2_1_0.mpd line 72</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_ethernetlite</arg>, INSTANCE:<arg fmt="%s" index="2">Ethernet_Lite</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_ethernetlite_v4_00_a/data/xps_ethernetlite_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_mch_emc</arg>, INSTANCE:<arg fmt="%s" index="2">Micron_RAM</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/data/xps_mch_emc_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_mch_emc</arg>, INSTANCE:<arg fmt="%s" index="2">Numonyx_PCM</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/data/xps_mch_emc_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">quad_spi_if</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_QuadSPI_Cntlr</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">32</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_v1_00_a/data/quad_spi_if_v2_1_0.mpd line 32</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">quad_spi_if</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_QuadSPI_Cntlr</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_v1_00_a/data/quad_spi_if_v2_1_0.mpd line 33</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">quad_spi_if</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_QuadSPI_Cntlr</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/quad_spi_if_v1_00_a/data/quad_spi_if_v2_1_0.mpd line 34</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">ssg_decoder</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_SevSeg_Disp</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="6">32</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/data/ssg_decoder_v2_1_0.mpd line 33</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">ssg_decoder</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_SevSeg_Disp</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/data/ssg_decoder_v2_1_0.mpd line 34</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">ssg_decoder</arg>, INSTANCE:<arg fmt="%s" index="2">Digilent_SevSeg_Disp</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib/Digilent/pcores/ssg_decoder_v1_00_a/data/ssg_decoder_v2_1_0.mpd line 35</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">mdm</arg>, INSTANCE:<arg fmt="%s" index="2">mdm_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 83</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">mdm</arg>, INSTANCE:<arg fmt="%s" index="2">mdm_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 84</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_intc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/data/xps_intc_v2_1_0.mpd line 73</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_timer</arg>, INSTANCE:<arg fmt="%s" index="2">xps_timer_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/data/xps_timer_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_timer</arg>, INSTANCE:<arg fmt="%s" index="2">xps_timer_0</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="6">2</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/data/xps_timer_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_tdo1</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_tdo1</arg> - No driver found. Port will be driven to <arg fmt="%s" index="3">GND</arg> - <arg fmt="%s" index="4">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 230</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">ICACHE_FSL_IN_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">microblaze_0_IXCL_FSL_S_Clk</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 963</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">ICACHE_FSL_OUT_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">microblaze_0_IXCL_FSL_M_Clk</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 968</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">DCACHE_FSL_IN_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">microblaze_0_DXCL_FSL_S_Clk</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 973</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">DCACHE_FSL_OUT_CLK</arg>, CONNECTOR: <arg fmt="%s" index="2">microblaze_0_DXCL_FSL_M_Clk</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 978</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_tdi</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_tdi</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 223</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_reset</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_reset</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 224</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_shift</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_shift</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 225</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_update</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_update</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 226</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_capture</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_capture</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 227</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_sel1</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_sel1</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 228</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">bscan_drck1</arg>, CONNECTOR: <arg fmt="%s" index="2">bscan_drck1</arg> - floating connection - <arg fmt="%s" index="3">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/data/mdm_v2_1_0.mpd line 229</arg> 
+</msg>
+
+<msg type="warning" file="EDK" num="0" delta="new" >PORT: <arg fmt="%s" index="1">Peripheral_Reset</arg>, CONNECTOR: <arg fmt="%s" index="2">sys_periph_reset</arg> - floating connection - <arg fmt="%s" index="3">/afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system.mhs line 350</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_D_PLB</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 217</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_I_PLB</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 220</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_ADDR_TAG_BITS</arg> value to <arg fmt="%s" index="6">6</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 320</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_DCACHE_ADDR_TAG</arg> value to <arg fmt="%s" index="6">6</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 350</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_USE_INTERRUPT</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 384</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_USE_EXT_BRK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 385</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_USE_EXT_NM_BRK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_10_a/data/microblaze_v2_1_0.mpd line 386</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_bram_if_cntlr</arg>, INSTANCE:<arg fmt="%s" index="2">dlmb_cntlr</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MASK</arg> value to <arg fmt="%s" index="6">0x80000000</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">lmb_bram_if_cntlr</arg>, INSTANCE:<arg fmt="%s" index="2">ilmb_cntlr</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MASK</arg> value to <arg fmt="%s" index="6">0x80000000</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_bram_if_cntlr_v3_00_a/data/lmb_bram_if_cntlr_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_intc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_NUM_INTR_INPUTS</arg> value to <arg fmt="%s" index="6">3</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/data/xps_intc_v2_1_0.mpd line 77</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_intc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_KIND_OF_INTR</arg> value to <arg fmt="%s" index="6">0b11111111111111111111111111111111</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/data/xps_intc_v2_1_0.mpd line 78</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_intc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_KIND_OF_EDGE</arg> value to <arg fmt="%s" index="6">0b11111111111111111111111111111111</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/data/xps_intc_v2_1_0.mpd line 79</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >IPNAME: <arg fmt="%s" index="1">xps_intc</arg>, INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_KIND_OF_LVL</arg> value to <arg fmt="%s" index="6">0b11111111111111111111111111111111</arg> - <arg fmt="%s" index="7">/sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_01_a/data/xps_intc_v2_1_0.mpd line 80</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" >The following instances are synthesized with <arg fmt="%s" index="1">XST</arg>. The MPD option IMP_NETLIST=TRUE indicates that a NGC file is to be produced using <arg fmt="%s" index="2">XST</arg> synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+</msg>
+
+<msg type="info" file="EDK" num="3509" delta="new" >NCF files should not be modified as they will be regenerated.
+If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">system</arg>.ucf file.
+</msg>
+
+</messages>
+

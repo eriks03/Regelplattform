@@ -1,0 +1,114 @@
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 2 master(s) : 11 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+WARNING:EDK - PORT: bscan_tdo1, CONNECTOR: bscan_tdo1 - No driver found. Port
+   will be driven to GND -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 230 
+WARNING:EDK - PORT: ICACHE_FSL_IN_CLK, CONNECTOR: microblaze_0_IXCL_FSL_S_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 963 
+WARNING:EDK - PORT: ICACHE_FSL_OUT_CLK, CONNECTOR: microblaze_0_IXCL_FSL_M_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 968 
+WARNING:EDK - PORT: DCACHE_FSL_IN_CLK, CONNECTOR: microblaze_0_DXCL_FSL_S_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 973 
+WARNING:EDK - PORT: DCACHE_FSL_OUT_CLK, CONNECTOR: microblaze_0_DXCL_FSL_M_Clk -
+   floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_
+   10_a/data/microblaze_v2_1_0.mpd line 978 
+WARNING:EDK - PORT: bscan_tdi, CONNECTOR: bscan_tdi - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 223 
+WARNING:EDK - PORT: bscan_reset, CONNECTOR: bscan_reset - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 224 
+WARNING:EDK - PORT: bscan_shift, CONNECTOR: bscan_shift - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 225 
+WARNING:EDK - PORT: bscan_update, CONNECTOR: bscan_update - floating connection
+   -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 226 
+WARNING:EDK - PORT: bscan_capture, CONNECTOR: bscan_capture - floating
+   connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 227 
+WARNING:EDK - PORT: bscan_sel1, CONNECTOR: bscan_sel1 - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 228 
+WARNING:EDK - PORT: bscan_drck1, CONNECTOR: bscan_drck1 - floating connection -
+   /sse/eda/xilinx-13.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_b/da
+   ta/mdm_v2_1_0.mpd line 229 
+WARNING:EDK - PORT: Peripheral_Reset, CONNECTOR: sys_periph_reset - floating
+   connection -
+   /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/Masterarbeit/work/system
+   .mhs line 350 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Port present in Ethernet_Lite
+Did not find device sumary in microblaze_0's synthesis log file
+Did not find timing summary in microblaze_0's synthesis log file
+Did not find device sumary in mb_plb's synthesis log file
+Did not find timing summary in mb_plb's synthesis log file
+Did not find device sumary in ilmb's synthesis log file
+Did not find timing summary in ilmb's synthesis log file
+Did not find device sumary in dlmb's synthesis log file
+Did not find timing summary in dlmb's synthesis log file
+Did not find device sumary in dlmb_cntlr's synthesis log file
+Did not find timing summary in dlmb_cntlr's synthesis log file
+Did not find device sumary in ilmb_cntlr's synthesis log file
+Did not find timing summary in ilmb_cntlr's synthesis log file
+Did not find device sumary in lmb_bram's synthesis log file
+Did not find timing summary in lmb_bram's synthesis log file
+Did not find device sumary in RS232_Uart_1's synthesis log file
+Did not find timing summary in RS232_Uart_1's synthesis log file
+Did not find device sumary in LEDs_8Bits's synthesis log file
+Did not find timing summary in LEDs_8Bits's synthesis log file
+Did not find device sumary in Push_Buttons_4Bits's synthesis log file
+Did not find timing summary in Push_Buttons_4Bits's synthesis log file
+Did not find device sumary in Ethernet_Lite's synthesis log file
+Did not find timing summary in Ethernet_Lite's synthesis log file
+Did not find device sumary in Micron_RAM's synthesis log file
+Did not find timing summary in Micron_RAM's synthesis log file
+Did not find device sumary in Numonyx_PCM's synthesis log file
+Did not find timing summary in Numonyx_PCM's synthesis log file
+Did not find device sumary in Digilent_QuadSPI_Cntlr's synthesis log file
+Did not find timing summary in Digilent_QuadSPI_Cntlr's synthesis log file
+Did not find device sumary in Digilent_SevSeg_Disp's synthesis log file
+Did not find timing summary in Digilent_SevSeg_Disp's synthesis log file
+Did not find device sumary in mem_bus_mux_0's synthesis log file
+Did not find timing summary in mem_bus_mux_0's synthesis log file
+Did not find device sumary in clock_generator_0's synthesis log file
+Did not find timing summary in clock_generator_0's synthesis log file
+Did not find device sumary in mdm_0's synthesis log file
+Did not find timing summary in mdm_0's synthesis log file
+Did not find device sumary in proc_sys_reset_0's synthesis log file
+Did not find timing summary in proc_sys_reset_0's synthesis log file
+Did not find device sumary in xps_intc_0's synthesis log file
+Did not find timing summary in xps_intc_0's synthesis log file
+Did not find device sumary in xps_timer_0's synthesis log file
+Did not find timing summary in xps_timer_0's synthesis log file
+Conversion to XML complete.

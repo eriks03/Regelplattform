@@ -1,0 +1,29 @@
+#Please do not modify this file by hand
+XmpVersion: 13.1
+VerMgmt: 13.1
+IntStyle: default
+ModuleSearchPath: /afs/tu-chemnitz.de/home/urz/e/eriks/PRIVAT/HiWi_SSE/FPGA_Reconfiguration/Nexys3_BSB_Support_v_2_4/Nexys3_PLB_BSB_Support/lib
+MHS File: system.mhs
+Architecture: spartan6
+Device: xc6slx16
+Package: csg324
+SpeedGrade: -3
+UserCmd1: 
+UserCmd1Type: 0
+UserCmd2: 
+UserCmd2Type: 0
+GenSimTB: 0
+SdkExportBmmBit: 1
+SdkExportDir: SDK/SDK_Export
+InsertNoPads: 0
+WarnForEAArch: 1
+HdlLang: VHDL
+SimModel: BEHAVIORAL
+UcfFile: data/system.ucf
+EnableParTimingError: 1
+ShowLicenseDialog: 1
+ICacheAddr: Micron_RAM,
+DCacheAddr: Micron_RAM,
+Processor: microblaze_0
+ElfImp: SDK/workspace/srec_bootloader_0/Debug/srec_bootloader_0.elf
+ElfSim: 
