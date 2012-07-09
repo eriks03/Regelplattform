@@ -9,6 +9,7 @@
 #define ICMP_H_
 
 #include "ip4.h"
+#include "networktypes.h"
 
 struct icmp_header
 {
@@ -21,7 +22,7 @@ struct icmp_header
 
 typedef struct icmp_header ICMPHeader_t;
 
-void SendICMPReply(u8 *ICMPRequest, int RequestLength, ip_addr_t DstAddr);
-void ParseICMPMessage(u8 *Buffer, int BufLength, ip_addr_t SrcAddr);
+void SendICMPReply(unsigned char *ICMPRequest, int RequestLength, ip_addr_t DstAddr);
+void ParseICMPMessage(unsigned char *Buffer, int BufLength, ip_addr_t SrcAddr);
 
 #endif /* ICMP_H_ */

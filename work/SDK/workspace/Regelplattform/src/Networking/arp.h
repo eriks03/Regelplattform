@@ -9,7 +9,7 @@
 #define ARP_H_
 
 #include "ethernet.h"
-#include "networktypes.h"
+//#include "networktypes.h"
 
 #define ARP_HARDWARE_ADR_TYPE_ETH 	0x0001
 #define ARP_PROTOCOL_ADR_TYPE_IP4 	0x0800
@@ -36,8 +36,9 @@ struct arp_package
 
 struct arp_cache_entry
 {
-	MACAddr_t	dst_mac_addr;
-	ip_addr_t	dst_ip_addr;
+	MACAddr_t		dst_mac_addr;
+	ip_addr_t		dst_ip_addr;
+	unsigned char 	age;
 };
 
 typedef struct arp_cache_entry arp_cache_entry_t;

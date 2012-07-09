@@ -8,6 +8,9 @@
 #ifndef IP4_H_
 #define IP4_H_
 
+//#include "networkcfg.h"
+//#include "ethernet.h"
+#include "icmp.h"
 #include "arp.h"
 
 #define IP4_IGMP 0x01

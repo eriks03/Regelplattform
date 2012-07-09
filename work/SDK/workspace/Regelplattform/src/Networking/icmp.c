@@ -8,7 +8,7 @@
 #include "icmp.h"
 #include "ip4.h"
 
-void SendICMPReply(u8 *ICMPRequest, int RequestLength, ip_addr_t DstIPAddr)
+void SendICMPReply(unsigned char *ICMPRequest, int RequestLength, ip_addr_t DstIPAddr)
 {
 	u8 DataBuffer[XEL_MAX_FRAME_SIZE - XEL_HEADER_SIZE - 20];
 
@@ -54,7 +54,7 @@ void SendICMPReply(u8 *ICMPRequest, int RequestLength, ip_addr_t DstIPAddr)
 	SendIP4Package(DstIPAddr, (u8 *)DataBuffer, RequestLength, 0x01);
 }
 
-void ParseICMPMessage(u8 *Buffer, int BufLength, ip_addr_t SrcAddr)
+void ParseICMPMessage(unsigned char *Buffer, int BufLength, ip_addr_t SrcAddr)
 {
 	ICMPHeader_t *icmp_header;
 

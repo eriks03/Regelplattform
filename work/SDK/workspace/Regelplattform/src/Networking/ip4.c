@@ -6,15 +6,12 @@
  */
 
 #include "ip4.h"
-#include "ethernet.h"
 #include "icmp.h"
 
 void SendIP4Package(ip_addr_t DstIPAddress, u8 *Payload, int PayloadLength, u8 Protocol)
 {
 	u8 PackageBuffer[XEL_MAX_FRAME_SIZE - XEL_HEADER_SIZE];
 	int i = 0;
-
-	ip_addr_t LocalIPAddr = {192, 168, 1, 10};
 
 	IP4Header_t ip4_header;
 
@@ -27,7 +24,7 @@ void SendIP4Package(ip_addr_t DstIPAddress, u8 *Payload, int PayloadLength, u8 P
 	ip4_header.TTL = 0x80;
 	ip4_header.HeaderChksm = 0x0000; // ToDo Calc Checksum
 	ip4_header.DstAddr = DstIPAddress;
-	ip4_header.SrcAddr = LocalIPAddr;
+	ip4_header.SrcAddr = LocalAddr;
 
 	u8 *HeaderPtr = (u8 *)&ip4_header;
 
@@ -55,11 +52,11 @@ void ParseIP4Header(u8 *Buffer)
 
 	ip4_header = (IP4Header_t *)Buffer;
 
-	ip_addr_t LocalIPAddr = {192, 168, 1, 10};
+	//ip_addr_t LocalIPAddr = {192, 168, 1, 10};
 
 	ip_addr_t RemoteIPAddr = ip4_header->DstAddr;
 
-	if (cmp_ip_addresses(&RemoteIPAddr, &LocalIPAddr ) == 1)
+	if (cmp_ip_addresses(&RemoteIPAddr, &LocalAddr ) == 1)
 	{
 		if (ip4_header->Protocol == IP4_IGMP)
 		{

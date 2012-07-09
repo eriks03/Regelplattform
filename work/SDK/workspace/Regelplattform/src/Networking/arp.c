@@ -8,6 +8,13 @@
 #include "arp.h"
 #include "networkcfg.h"
 
+/**
+ *
+ * @param DstIPAddress
+ * @param DstMACAddress
+ * @param PackageType
+ * @return
+ */
 int SendArpPacket(ip_addr_t *DstIPAddress, MACAddr_t *DstMACAddress, unsigned short PackageType)
 {
 	arp_pkg_t arp_pkg;
@@ -49,7 +56,13 @@ int SendArpPacket(ip_addr_t *DstIPAddress, MACAddr_t *DstMACAddress, unsigned sh
 	return 0;
 }
 
-
+/**
+ * Looks if the given MAC-Address is already in the ARP-Cache.
+ *
+ * @param MacAddress which should be in the cache
+ *
+ * @return 1 if the Address is in the cache and 0 if not
+ */
 int IsMacInCache(MACAddr_t *MacAddress)
 {
 	int i = 0;
@@ -68,8 +81,8 @@ int IsMacInCache(MACAddr_t *MacAddress)
 	return 0;
 }
 
-/*
- * Init ARP Cache with empty entries
+/**
+ * Initializes the ARP-Cache with empty Items
  */
 void initArpCache()
 {
@@ -94,8 +107,12 @@ void initArpCache()
 	}
 }
 
-/*
- * Look if two IP Adresses are equal
+/**
+ * Compares two IP-Addresses
+ * @param IPAddr1 is the first IP-Address to compare
+ * @param IPAddr2 is the second IP-Address to compare
+ *
+ * @return 1 if the Addresses are equal and 0 otherwise
  */
 int cmp_ip_addresses(ip_addr_t *IPAddr1, ip_addr_t *IPAddr2)
 {
@@ -115,13 +132,14 @@ int cmp_ip_addresses(ip_addr_t *IPAddr1, ip_addr_t *IPAddr2)
 	}
 }
 
+/**
+ * Searches in the given Ethernet-Frame for ARP-Informations and executes the necessary actions.
+ *
+ * @param Buffer with the Ethernet-Frame
+ */
 void ParseArpPackage(u8 *Buffer)
 {
 	arp_pkg_t *arp_pkg;
-
-	// for testing
-
-	// end testing
 
 	ip_addr_t RemoteIPAddr;
 
@@ -132,9 +150,22 @@ void ParseArpPackage(u8 *Buffer)
 
 	if (arp_pkg->operation == ARP_OPERATION_REQUEST)
 	{
-		if (cmp_ip_addresses(&RemoteIPAddr, &LocalIPAddr) == 1)
+		if (cmp_ip_addresses(&RemoteIPAddr, &LocalAddr) == 1)
 		{
 			SendArpPacket(&arp_pkg->src_ip_addr, &arp_pkg->src_mac_addr, ARP_OPERATION_REPLY);
 		}
 	}
+}
+
+/**
+ * Adds an Item for the ARP cache and increases the age for the existing entries
+ *
+ * @param item the ARP-Cache item to add
+ *
+ * @return 0 if no errors and 1 otherwise
+ */
+int AddToArpCache(arp_cache_entry_t *item)
+{
+
+	return 0;
 }

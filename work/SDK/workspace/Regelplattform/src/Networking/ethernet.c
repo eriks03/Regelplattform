@@ -4,12 +4,11 @@
  *  Created on: Jun 27, 2012
  *      Author: eriks
  */
-
+//#include "networkcfg.h"
 #include "ethernet.h"
 #include "arp.h"
 #include "ip4.h"
 
-int i;
 
 /******************************************************************************/
 /**
@@ -30,6 +29,7 @@ int i;
 int EmacLiteSendFrame(u8 *Payload, u32 PayloadSize, MACAddr_t *DstMACAddr, short Type)
 {
 	int Status;
+	int i;
 	u8 *FramePtr;
 	//u32 Index;
 
@@ -47,7 +47,6 @@ int EmacLiteSendFrame(u8 *Payload, u32 PayloadSize, MACAddr_t *DstMACAddr, short
 	 * Fill in the valid Destination MAC address if
 	 * the Loopback is not enabled.
 	 */
-
 	*FramePtr++ = DstMACAddr->byte1;
 	*FramePtr++ = DstMACAddr->byte2;
 	*FramePtr++ = DstMACAddr->byte3;
@@ -89,7 +88,17 @@ int EmacLiteSendFrame(u8 *Payload, u32 PayloadSize, MACAddr_t *DstMACAddr, short
 	return XST_SUCCESS;
 }
 
-
+/*******************************************************************************/
+/**
+ *
+ * This function processes an Ethernet Frame in the Buffer and calls the
+ * appropriate function in the next upper Layer
+ *
+ * @param	Buffer is the an Array with a size of 1500 Bytes where the Frame is
+ *
+ * @note	None.
+ *
+ *******************************************************************************/
 void ParseEthernetFrame(u8 *Buffer)
 {
 	eth_header_t *ethHeader;
@@ -113,9 +122,19 @@ void ParseEthernetFrame(u8 *Buffer)
 	}
 }
 
-/*
- * Look if two mac-addresses are equal
- */
+/***************************************************************************/
+/**
+ *
+ * This Function compares two MAC-Addresses and returns the result
+ *
+ * @param	MacAddr1 is the first MAC-Address to compare
+ * @param	MacAddr2 ist the second MAC-Address to compare
+ *
+ * @return	1 if the addresses are equal and 0 if they are not equal
+ *
+ * @note	None.
+ *
+ ***************************************************************************/
 int cmp_mac_addresses(MACAddr_t *MacAddr1, MACAddr_t *MacAddr2)
 {
 	if ((MacAddr1->byte1 == MacAddr2->byte1) &&

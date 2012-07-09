@@ -3,6 +3,8 @@
 #include "main.h"
 #include "time.h"
 #include "xil_exception.h"
+#include "Networking/networkcfg.h"
+#include "Networking/ethernet.h"
 #include "Networking/arp.h"
 #include "Networking/ip4.h"
 
